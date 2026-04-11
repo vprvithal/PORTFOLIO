@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vithal | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#fff;
+  color:#111827;
+}
+
+/* SECTION BACKGROUND */
+.section-bg{
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color:white;
+  border-radius:30px;
+  margin:40px;
+}
+
+/* CONTAINER */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+/* TITLES */
+h2{
+  font-size:2.5rem;
+  margin-bottom:20px;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{
+  font-size:3rem;
+}
+
+.hero span{
+  color:#7C3AED;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.card{
+  background:white;
+  color:#333;
+  padding:20px 25px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+/* ICON */
+.icon{
+  font-size:22px;
+  color:#7C3AED;
+}
+
+/* TEXT */
+p{
+  line-height:1.6;
+}
+
+/* LINKS */
+a{
+  text-decoration:none;
+  color:#6366f1;
+}
+
+/* CONTACT CARD */
+.contact-card{
+  flex-direction:column;
+  text-align:center;
+}
+
+.contact-card h3{
+  margin:10px 0;
+}
+
+/* FLEX FOR ICON + TEXT (ONLY WHERE NEEDED) */
+.flex-row{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1{
+    font-size:2rem;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>VUNUDURTHI PANDU RANGA <span>VITHAL RAO</span></h1>
+  <p>Data Analyst | Power BI | Python | SQL</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section-bg">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Data Science student with hands-on experience in data analysis,
+      visualization, and machine learning. I specialize in transforming raw data into meaningful insights
+      using tools like Power BI, Python, and SQL.
+      <br><br>
+      Through internships and projects, I developed strong analytical thinking and problem-solving skills.
+      I aim to contribute to data-driven decision-making in real-world business environments.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section-bg">
+  <div class="container">
+    <h2>Skills</h2>
+
+    <div class="grid">
+
+      <div class="card flex-row">
+        <i class="fas fa-chart-bar icon"></i> Power BI
+      </div>
+
+      <div class="card flex-row">
+        <i class="fab fa-python icon"></i> Python
+      </div>
+
+      <div class="card flex-row">
+        <i class="fas fa-database icon"></i> SQL
+      </div>
+
+      <div class="card flex-row">
+        <i class="fas fa-file-excel icon"></i> Excel
+      </div>
+
+      <div class="card flex-row">
+        <i class="fas fa-robot icon"></i> Machine Learning
+      </div>
+      
+       <div class="card flex-row">
+        <i class="fas fa-tools icon"></i> Data Analysis (EDA)
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+<!-- INTERNSHIPS -->
+<section class="section-bg">
+  <div class="container">
+    <h2>Internships</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Machine Learning Intern</h3>
+        <p>
+          ⇒ Performed data cleaning, preprocessing, and exploratory data analysis (EDA).<br>
+          ⇒ Identified patterns and trends to derive insights and worked on real-world datasets.<br>
+	  ⇒ Worked with structured features and target variables to analyze how data impacts outcomes.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Data Science Intern</h3>
+        <p>
+          ⇒ Built Power BI dashboards and worked with Python & SQL for data processing.<br>
+          ⇒ Supported KPI tracking and business decision-making.<br>
+	  ⇒ Used Python and SQL to process datasets and support KPI tracking and reporting needs.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section-bg">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Mobile Price Prediction</h3>
+        <p>
+          ● Built a machine learning model using Random Forest to predict mobile prices.<br>
+          ● Included preprocessing, feature engineering, and real-time prediction interface.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>E-Commerce Dashboard</h3>
+        <p>
+          ● Designed Power BI dashboards with 1000+ records.<br>
+          ● Created KPIs and visual insights for sales analysis.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>WhisperBin</h3>
+        <p>
+          ● Developed a Flask-based secure app for self-destructing messages.<br>
+          ● Focused on privacy and backend logic.<br>
+	  ● Evaluated model performance using R² Score and Mean Squared Error to ensure accuracy.	
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================== YOUR ORIGINAL CERTIFICATIONS (UNCHANGED) ================== -->
+<section class="section-bg">
+  <div class="container">
+    <h2>Certifications</h2>
+
+    <div class="grid">
+
+      <div class="card flex-row">
+        <i class="fab fa-microsoft icon"></i>
+        <span>Microsoft - PL-300: Data Analyst Associate</span>
+      </div>
+
+      <div class="card flex-row">
+        <i class="fas fa-database icon"></i>
+        <span>IBM - Data Analysis Using Python</span>
+      </div>
+
+      <div class="card flex-row">
+        <i class="fab fa-python icon"></i>
+        <span>Infosys - Python for Data Science</span>
+      </div>
+
+      <div class="card flex-row">
+        <i class="fas fa-code icon"></i>
+        <span>CISCO - Python Essentials</span>
+      </div>
+
+      <div class="card flex-row">
+        <i class="fas fa-comments icon"></i>
+        <span>TCS - English Communication</span>
+      </div>
+
+      <div class="card flex-row">
+        <i class="fas fa-award icon"></i>
+        <span>Pearson Mepro</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================== YOUR ORIGINAL CONTACT (UNCHANGED) ================== -->
+<section class="section-bg">
+  <div class="container">
+
+    <h2>Get in Touch</h2>
+
+    <div class="grid">
+
+      <div class="card contact-card">
+        <i class="fas fa-envelope icon"></i>
+        <h3>Email</h3>
+        <a href="mailto:vprvitthal@gmail.com">vprvitthal@gmail.com</a>
+      </div>
+
+      <div class="card contact-card">
+        <i class="fas fa-phone icon"></i>
+        <h3>Phone</h3>
+        <a href="tel:+918309942380">+91 8309942380</a>
+      </div>
+
+      <div class="card contact-card">
+        <i class="fab fa-linkedin icon"></i>
+        <h3>LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/vithal-vunudurthi" target="_blank">
+          vithal-vunudurthi
+        </a>
+      </div>
+
+      <div class="card contact-card">
+        <i class="fab fa-github icon"></i>
+        <h3>GitHub</h3>
+        <a href="https://github.com/vprvithal" target="_blank">
+          vprvithal
+        </a>
+      </div>
+
+      <div class="card contact-card">
+        <i class="fas fa-map-marker-alt icon"></i>
+        <h3>Location</h3>
+        <p>Nidadavole, Andhra Pradesh, 534301</p>
+      </div>
+
+      <div class="card contact-card">
+        <i class="fab fa-whatsapp icon"></i>
+        <h3>WhatsApp</h3>
+        <a href="https://wa.me/918309942380">Message Me</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
